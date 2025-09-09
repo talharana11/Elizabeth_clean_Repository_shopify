@@ -9,7 +9,11 @@ module.exports = {
     "./templates/customers/*.liquid"
   ],
   theme: {
-    extend: {},
+    extend: {
+      maxwidth: {
+        '6xl': '72rem',
+      },
+    },
   },
   plugins: [],
-}
+};
