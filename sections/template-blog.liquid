@@ -8,7 +8,8 @@
         <div class="overflow-hidden bg-white rounded-lg shadow-xl">
           {% if article.image %}
           <a href="{{ article.url }}">
-            <img class="object-cover w-full h-80" src="{{ article.image | image_url }}" alt="{{ article.image.alt }}">
+            <img class="object-cover w-full h-80" src="{{ article.image | image_url }}" alt="{{ article.image.alt }}"
+              width="{{ blog.image.width }}" height="{{ blog.image.height }}">
           </a>
           {% else %}
           {{ 'image' | placeholder_svg_tag: 'object-cover w-full h-80 bg-gray-200' }}
