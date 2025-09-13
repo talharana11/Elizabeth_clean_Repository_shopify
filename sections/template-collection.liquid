@@ -1,5 +1,5 @@
 <div class="px-4 py-8">
-    {% paginate collection.products by 3 %}
+    {% paginate collection.products by section.settings.number_of_products_per_page %}
     <h1 class="text-3xl text-center">{{ product.title }}</h1>
     <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
